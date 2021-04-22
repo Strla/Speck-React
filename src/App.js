@@ -17,9 +17,8 @@ function App() {
       <Header/>
       <Main>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/events" component={Events}/>
-        <Route exact path="/event" component={Event}/>
-        
+        <Route path="/events" component={Events}/>
+        <Route path="/event" component={Event}/>
       </Main>
       <Footer/>
     </>

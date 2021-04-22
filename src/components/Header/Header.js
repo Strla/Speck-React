@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './Header.scss';
 import Logo from '../../assets/images/logo.png';
 
@@ -18,8 +19,8 @@ const Header = () => {
             </div>
 
             <nav className="Header-Nav">
-                <Link to="/" className="Header-NavItem">Home</Link>
-                <Link to="/events" className="Header-NavItem">Events</Link>
+                <NavLink exact to="/" activeStyle={{color: "#d33e3e"}} className="Header-NavItem">Home</NavLink>
+                <NavLink exact to="/events" activeStyle={{color: "#d33e3e"}} className="Header-NavItem">Events</NavLink>
             </nav>
         </div>
 
