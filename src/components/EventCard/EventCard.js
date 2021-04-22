@@ -5,10 +5,10 @@ import './EventCard.scss';
 
 const EventCard = ({
     title,
-    lokacija,
-    datumVrijeme,
-    slobodnaMjesta,
-    firma,
+    location,
+    dateTime,
+    freeSeats,
+    company,
     buttonText
 }) => {
 	return (
@@ -19,24 +19,24 @@ const EventCard = ({
 					<div className="EventCard-ContentRow">
 						<div className="EventCard-Item">
 							<h3 className="EventCard-ItemTitle">Lokacija</h3>
-							<p className="EventCard-ItemValue">{lokacija}</p>
+							<p className="EventCard-ItemValue">{location}</p>
 						</div>
 
 						<div className="EventCard-Item">
 							<h3 className="EventCard-ItemTitle">Datum i vrijeme</h3>
-							<p className="EventCard-ItemValue">{datumVrijeme}</p>
+							<p className="EventCard-ItemValue">{dateTime}</p>
 						</div>
 					</div>
 
 					<div className="EventCard-ContentRow">
 						<div className="EventCard-Item">
 							<h3 className="EventCard-ItemTitle">Slobodna mjesta</h3>
-							<p className="EventCard-ItemValue">{slobodnaMjesta}</p>
+							<p className="EventCard-ItemValue">{freeSeats}</p>
 						</div>
 
 						<div className="EventCard-Item">
 							<h3 className="EventCard-ItemTitle">Firma</h3>
-							<p className="EventCard-ItemValue">{firma}</p>
+							<p className="EventCard-ItemValue">{company}</p>
 						</div>
 					</div>
 
