@@ -40,7 +40,7 @@ const EventCard = ({
 					</div>
 				</div>
 
-				<Link to="/event">
+				<Link to="/event" style={{ textDecoration: 'none' }}>
 					<Button text={buttonText} />
 				</Link>
 			</div>

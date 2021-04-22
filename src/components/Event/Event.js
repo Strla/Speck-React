@@ -11,7 +11,7 @@ const Event = ({ image, title, description, buttonText }) => {
             </figure>
             <h3 className="Event-Title">{title}</h3>
             <p className="Event-Description">{description}</p>
-            <Link to="/event">
+            <Link to="/event" style={{ textDecoration: 'none' }}>
                 <Button text={buttonText} />
             </Link>
         </div>
