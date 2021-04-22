@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Header.scss';
 import Logo from '../../assets/images/logo.png';
 
@@ -6,9 +7,9 @@ const Header = () => {
     return (
         <header className="Header">
         <div className="Header-Inner">
-            <a href="index.html" className="Header-LogoContainer">
+            <Link to="/" className="Header-LogoContainer">
                 <img src={Logo} className="Header-Logo" alt="Logo"/>
-            </a>
+            </Link>
 
             <div className="Header-NavHamburger">
                <div className="Header-NavHamburgerLine"></div>
@@ -17,8 +18,8 @@ const Header = () => {
             </div>
 
             <nav className="Header-Nav">
-                <a href="index.html" className="Header-NavItem">Home</a>
-                <a href="events.html" className="Header-NavItem">Events</a>
+                <Link to="/" className="Header-NavItem">Home</Link>
+                <Link to="/events" className="Header-NavItem">Events</Link>
             </nav>
         </div>
 

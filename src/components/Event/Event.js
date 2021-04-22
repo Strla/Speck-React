@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
+import {Link} from 'react-router-dom';
 import './Event.scss';
 
 const Event = ({
@@ -15,7 +16,7 @@ const Event = ({
             </figure>
             <h3 className="Event-Title">{title}</h3>
             <p className="Event-Description">{description}</p>
-            <Button text={buttonText}/>
+           <Link to="/event"><Button text={buttonText}/></Link> 
         </div>
     );
 }
