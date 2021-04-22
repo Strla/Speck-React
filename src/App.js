@@ -3,8 +3,8 @@ import {Route} from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
-
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './ScrollToTop';
 
 //pages
 import Home from './pages/Home/Home';
@@ -14,6 +14,7 @@ import Event from "./pages/Event/Event";
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header/>
       <Main>
         <Route exact path="/" component={Home}/>
