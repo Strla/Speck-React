@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -15,13 +15,13 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Header/>
+      <Header />
       <Main>
-        <Route exact path="/" component={Home}/>
-        <Route path="/events" component={Events}/>
-        <Route path="/event" component={Event}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/events" component={Events} />
+        <Route path="/event" component={Event} />
       </Main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

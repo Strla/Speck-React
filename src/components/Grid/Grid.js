@@ -5,7 +5,7 @@ const Grid = (props) => {
     const gridClassName = `Grid Grid_${props.columns}`;
     return (
         <div className={gridClassName}>
-            { props.children }
+            { props.children}
         </div>
     );
 }
